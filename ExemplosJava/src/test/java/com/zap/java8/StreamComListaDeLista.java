@@ -47,6 +47,7 @@ public class StreamComListaDeLista {
 
         List<Post> posts = Arrays.asList(post1, post2);
 
+        // Teste
         List<Usuario> usuarios = posts.stream()
                 .map(Post::getComentarios)
                 .flatMap(Collection::stream)
